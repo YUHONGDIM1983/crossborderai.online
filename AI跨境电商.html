@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI+跨境电商工具导航，一站式解决方案助力卖家提升效率，包含AI选品、AI文案、AI客服、AI图片、AI物流等多种工具">
+    <meta name="keywords" content="AI+跨境电商工具,跨境电商AI工具,AI选品,AI文案,AI客服,跨境电商导航,智能跨境电商">
+    <title>AI+跨境电商工具导航 - 智能选品、文案生成、运营优化一站式解决方案</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        dark: {
+                            bg: '#111827',
+                            card: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 网站图标 -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI+跨境电商工具导航",
+        "url": "https://crossborderai.online/",
+        "description": "跨境电商AI工具导航，提供智能选品、文案生成、客服自动化、图片处理和物流优化等一站式解决方案，助力卖家提升效率",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://crossborderai.online/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300">
+    <header class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">AI+跨境电商工具导航</h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto text-center">一站式解决方案，助力跨境电商卖家提高效率、降低成本、增加销量</p>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 py-8">
+        <!-- 一句话介绍 -->
+        <div class="text-center mb-8">
+            <p class="text-xl font-medium">您的跨境电商AI工具一站式导航平台，覆盖产品选择、文案创作、客户服务、图片处理到物流优化的全流程解决方案</p>
+        </div>
+        
+        <!-- 跨境电商基本情况 -->
+        <section class="bg-white dark:bg-dark-card rounded-xl shadow-md p-6 mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-primary dark:text-blue-400">跨境电商基本情况</h2>
+            <div class="space-y-4">
+                <p>跨境电商是指通过电子商务平台实现不同国家或地区间的商品交易，包括亚马逊、eBay、Shopify、速卖通、Wish等平台，允许卖家将商品销售到全球市场。近年来，跨境电商行业正经历数字化和智能化转型，AI技术成为提升竞争力的关键。</p>
+                <p>根据最新数据，全球跨境电商市场规模预计将从2023年的5.8万亿美元增长到2028年的10.6万亿美元，年复合增长率达到12.9%。亚太地区、北美和欧洲是主要市场，其中中国卖家在全球跨境电商市场占据重要地位。</p>
+                <p>AI技术在跨境电商中的应用正变得越来越普遍，从产品研发、市场分析、内容创作到客户服务、物流优化等各个环节，AI工具可以帮助卖家降低运营成本，提高决策效率，增强竞争优势。本导航站收集了各类优质AI+跨境电商工具，帮助卖家快速找到适合自己业务需求的解决方案。</p>
+            </div>
+        </section>
+        
+        <!-- 工具搜索和筛选 -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+            <div class="w-full md:w-auto flex-grow max-w-md">
+                <input type="text" id="search-input" placeholder="搜索AI工具..." class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700">
+            </div>
+            
+            <div class="flex flex-wrap gap-2">
+                <button class="category-tab active bg-primary text-white px-4 py-2 rounded-full text-sm font-medium" data-category="all">全部</button>
+                <button class="category-tab bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors" data-category="选品">AI选品</button>
+                <button class="category-tab bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors" data-category="文案">AI文案</button>
+                <button class="category-tab bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors" data-category="客服">AI客服</button>
+                <button class="category-tab bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors" data-category="图片">AI图片</button>
+                <button class="category-tab bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors" data-category="物流">AI物流</button>
+            </div>
+            
+            <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- 工具卡片网格 -->
+        <div id="tools-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- 工具卡片将通过JavaScript动态生成 -->
+        </div>
+        
+        <!-- 视频区域 -->
+        <h3 class="text-2xl font-bold mb-4 text-primary dark:text-blue-400">AI如何改变跨境电商？</h3>
+        <div class="relative rounded-xl overflow-hidden shadow-lg mb-10 aspect-video">
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <!-- AI优势介绍 -->
+        <section class="bg-white dark:bg-dark-card rounded-xl shadow-md p-6 mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-primary dark:text-blue-400">AI+跨境电商工具的优势</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        智能选品
+                    </h3>
+                    <p>AI可以分析海量市场数据，预测产品趋势和消费者需求，帮助卖家发现潜在爆款商品，减少库存风险。</p>
+                </div>
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        多语言文案
+                    </h3>
+                    <p>AI文案工具可以快速生成优质产品描述、广告文案和社交媒体内容，支持多种语言，帮助卖家节省翻译成本，提高内容质量。</p>
+                </div>
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        智能客服
+                    </h3>
+                    <p>AI聊天机器人可以24/7全天候处理客户咨询，提高响应速度，支持多语言沟通，提升客户满意度。</p>
+                </div>
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        视觉优化
+                    </h3>
+                    <p>AI图像工具可以自动生成高质量产品图片、编辑图像、去除背景、生成主图和广告图，提升视觉吸引力，提高点击率和转化率。</p>
+                </div>
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        物流预测
+                    </h3>
+                    <p>AI算法可以优化物流路线，预测配送时间，自动处理清关文件，提高物流效率，降低物流成本，提升客户满意度。</p>
+                </div>
+                <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                    <h3 class="font-bold mb-2 flex items-center">
+                        <span class="text-primary dark:text-blue-400 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        智能定价
+                    </h3>
+                    <p>AI定价工具可以分析市场竞争情况，自动调整产品价格，最大化利润，提高销售额，帮助卖家制定更科学的定价策略。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 行业最新动态 -->
+        <section class="bg-white dark:bg-dark-card rounded-xl shadow-md p-6 mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-primary dark:text-blue-400">跨境电商行业最新动态</h2>
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                    <h3 class="font-bold mb-2">AI驱动的市场研究工具改变跨境选品策略</h3>
+                    <p class="text-gray-600 dark:text-gray-300">2023年，采用AI市场研究工具的跨境卖家销售增长率平均高出30%，AI选品已成为行业标配。</p>
+                </div>
+                <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                    <h3 class="font-bold mb-2">多语言AI内容生成成为跨境卖家标配</h3>
+                    <p class="text-gray-600 dark:text-gray-300">随着GPT-4等大语言模型的普及，跨境卖家可以快速生成高质量的多语言产品描述，提高全球化效率。</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">物流智能化成为降本增效的关键</h3>
+                    <p class="text-gray-600 dark:text-gray-300">AI物流优化系统可以减少30%的物流成本，缩短20%的配送时间，成为跨境电商竞争的新优势。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">AI+跨境电商工具导航</h2>
+                    <p class="text-gray-600 dark:text-gray-400">提供跨境电商AI一站式解决方案</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">关于我们</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">联系方式</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">提交工具</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">隐私政策</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
+                <p>© 2025 crossborderai.online - AI+跨境电商工具导航 | 关键词: AI+跨境电商工具, 智能选品, AI文案生成, 跨境电商AI解决方案</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 工具数据
+        const toolsData = [
+            {
+                name: "Jungle Scout",
+                url: "https://www.junglescout.com/",
+                category: "选品",
+                desc: "AI驱动的亚马逊选品工具，提供市场分析、销量预测和竞品研究，帮助卖家发现高潜力产品",
+                price: "¥699/月起",
+                rating: 4.5,
+                logo: "/api/placeholder/150/150?text=JS"
+            },
+            {
+                name: "Helium 10",
+                url: "https://www.helium10.com/",
+                category: "选品",
+                desc: "亚马逊卖家全功能工具包，包含AI关键词研究和产品发现功能，帮助卖家优化listing和提高销量",
+                price: "¥650/月起",
+                rating: 4.7,
+                logo: "/api/placeholder/150/150?text=H10"
+            },
+            {
+                name: "AMZScout",
+                url: "https://amzscout.net/",
+                category: "选品",
+                desc: "亚马逊产品研究工具，提供销售数据分析和利润计算，帮助卖家找到利润高的产品机会",
+                price: "¥350/月起",
+                rating: 4.3,
+                logo: "/api/placeholder/150/150?text=AMZS"
+            },
+            {
+                name: "ChatGPT",
+                url: "https://chat.openai.com/",
+                category: "文案",
+                desc: "强大的AI文案助手，可生成产品描述、广告文案、社交媒体内容，支持多种语言",
+                price: "基础版免费/Plus版¥140/月",
+                rating: 4.8,
+                logo: "/api/placeholder/150/150?text=GPT"
+            },
+            {
+                name: "Jasper",
+                url: "https://www.jasper.ai/",
+                category: "文案",
+                desc: "专业AI内容生成工具，针对电商优化，可快速创建高质量的产品描述和广告文案",
+                price: "¥350/月起",
+                rating: 4.6,
+                logo: "/api/placeholder/150/150?text=Jasper"
+            },
+            {
+                name: "Copy.ai",
+                url: "https://www.copy.ai/",
+                category: "文案",
+                desc: "AI文案助手，帮助生成产品标题、描述和营销内容，支持多种文案模板",
+                price: "基础版免费/Pro版¥290/月",
+                rating: 4.2,
+                logo: "/api/placeholder/150/150?text=CopyAI"
+            },
+            {
+                name: "Midjourney",
+                url: "https://www.midjourney.com/",
+                category: "图片",
+                desc: "AI图像生成工具，可创建高质量产品展示图、广告图和社交媒体素材",
+                price: "¥140/月起",
+                rating: 4.9,
+                logo: "/api/placeholder/150/150?text=MJ"
+            },
+            {
+                name: "Canva AI",
+                url: "https://www.canva.com/",
+                category: "图片",
+                desc: "AI图片编辑和设计工具，提供电商模板，轻松创建专业产品图片和营销素材",
+                price: "基础版免费/Pro版¥90/月",
+                rating: 4.8,
+                logo: "/api/placeholder/150/150?text=Canva"
+            },
+            {
+                name: "Remove.bg",
+                url: "https://www.remove.bg/",
+                category: "图片",
+                desc: "AI背景去除工具，一键生成透明背景产品图，提升产品展示效果",
+                price: "基础版免费/按量付费",
+                rating: 4.5,
+                logo: "/api/placeholder/150/150?text=RemoveBG"
+            },
+            {
+                name: "Zendesk AI",
+                url: "https://www.zendesk.com/",
+                category: "客服",
+                desc: "智能客服解决方案，自动回答常见问题，支持多语言，提升客户满意度",
+                price: "¥350/座席/月起",
+                rating: 4.4,
+                logo: "/api/placeholder/150/150?text=Zendesk"
+            },
+            {
+                name: "ManyChat",
+                url: "https://manychat.com/",
+                category: "客服",
+                desc: "Facebook Messenger和WhatsApp的AI聊天机器人平台，自动回复客户咨询",
+                price: "基础版免费/Pro版¥100/月起",
+                rating: 4.6,
+                logo: "/api/placeholder/150/150?text=ManyChat"
+            },
+            {
+                name: "Tidio",
+                url: "https://www.tidio.com/",
+                category: "客服",
+                desc: "AI驱动的网站聊天机器人，可自动回答问题，提高客户转化率",
+                price: "基础版免费/高级版¥210/月起",
+                rating: 4.5,
+                logo: "/api/placeholder/150/150?text=Tidio"
+            },
+            {
+                name: "Flexport",
+                url: "https://www.flexport.com/",
+                category: "物流",
+                desc: "AI驱动的全球物流平台，优化国际货运和清关流程，提高物流效率",
+                price: "定制报价",
+                rating: 4.3,
+                logo: "/api/placeholder/150/150?text=Flexport"
+            },
+            {
+                name: "ShipBob",
+                url: "https://www.shipbob.com/",
+                category: "物流",
+                desc: "智能物流解决方案，提供仓储和配送优化服务，加速全球配送",
+                price: "定制报价",
+                rating: 4.2,
+                logo: "/api/placeholder/150/150?text=ShipBob"
+            },
+            {
+                name: "Freightos",
+                url: "https://www.freightos.com/",
+                category: "物流",
+                desc: "国际货运在线市场，AI比价系统帮助卖家找到最优物流方案",
+                price: "按需使用",
+                rating: 4.4,
+                logo: "/api/placeholder/150/150?text=Freightos"
+            }
+        ];
+
+        // DOM元素
+        const toolsContainer = document.getElementById('tools-container');
+        const searchInput = document.getElementById('search-input');
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const themeToggle = document.getElementById('theme-toggle');
+
+        // 渲染工具卡片
+        function renderTools(tools) {
+            toolsContainer.innerHTML = '';
+            
+            if (tools.length === 0) {
+                toolsContainer.innerHTML = '<div class="col-span-full text-center py-10">没有找到匹配的工具，请尝试其他搜索关键词。</div>';
+                return;
+            }
+            
+            tools.forEach(tool => {
+                const stars = '★'.repeat(Math.floor(tool.rating)) + '☆'.repeat(5 - Math.floor(tool.rating));
+                
+                const toolCard = document.createElement('div');
+                toolCard.className = 'bg-white dark:bg-dark-card rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-2 duration-300';
+                
+                toolCard.innerHTML = `
+                    <div class="bg-gray-100 dark:bg-gray-700 h-32 flex items-center justify-center p-4">
+                        <img src="${tool.logo}" alt="${tool.name}" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <a href="${tool.url}" target="_blank" class="text-primary dark:text-blue-400 hover:underline">${tool.name}</a>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">${tool.desc}</p>
+                        <div class="flex justify
